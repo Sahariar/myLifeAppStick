@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+#root {
+	overflow: hidden;
+}
+.home-hero-area {
+	background-image: url(./public/img/home/bg-area.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.icon-rail {
+	background-image: url(./public/img/bg/V7.png);
+	background-repeat: no-repeat;
+	background-position: 70%;
+	height: 300px;
+}
+.icon-orange {
+	background-image: url(../public/img/bg/group31.png);
+	background-repeat: no-repeat;
+	background-position: 8%;
+	height: 390px;
+	bottom: 100px;
+	width: 100%;
+}
+.icon-edge {
+	background-image: url(../public/img/bg/Ell.png);
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 200px;
+}
+.icon-green {
+	background-image: url(./public/img/bg/greencricle.png);
+	background-repeat: no-repeat;
+	background-position: 94%;
+	height: 60px;
+	overflow: hidden;
+}
+.icon-small-dot {
+	background-image: url(../public/img/bg/smallbg.png);
+	background-repeat: no-repeat;
+	background-position: 94%;
+	height: 20px;
+	width: 20px;
+	overflow: hidden;
+}
+.icon-group {
+	background-image: url(../public/img/bg/group32.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position-y: bottom;
+	background-position-x: right;
+}
