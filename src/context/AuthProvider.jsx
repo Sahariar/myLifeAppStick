@@ -7,9 +7,9 @@ import {
 	createUserWithEmailAndPassword,
 	signOut,
 	onAuthStateChanged,
-    sendEmailVerification,
-    signInWithEmailAndPassword,
-    updateProfile
+	sendEmailVerification,
+	signInWithEmailAndPassword,
+	updateProfile,
 } from "firebase/auth";
 
 export const AuthContext = createContext();
@@ -33,19 +33,20 @@ const AuthProvider = ({ children }) => {
 		setLoading(true);
 		return signInWithEmailAndPassword(auth, email, password);
 	};
-    const userProfileUpdate  = (name , photoUrl ) => {
-        return updateProfile(auth.currentUser, {
-            displayName: name, photoURL: photoUrl
-          }) 
-    }
+	const userProfileUpdate = (name, photoUrl) => {
+		return updateProfile(auth.currentUser, {
+			displayName: name,
+			photoURL: photoUrl,
+		});
+	};
 
 	const logOut = () => {
 		setLoading(true);
 		return signOut(auth);
 	};
-    const verifyEmail = (email) => {
-        return sendEmailVerification(auth.currentUser);
-    }
+	const verifyEmail = (email) => {
+		return sendEmailVerification(auth.currentUser);
+	};
 	useEffect(() => {
 		const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
 			setUser(currentUser);
@@ -64,8 +65,8 @@ const AuthProvider = ({ children }) => {
 		createUserWithEmail,
 		logInWithGoogle,
 		loading,
-        verifyEmail,
-        userProfileUpdate,
+		verifyEmail,
+		userProfileUpdate,
 	};
 
 	return (

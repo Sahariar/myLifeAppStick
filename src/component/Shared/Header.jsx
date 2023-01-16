@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
 import SiteLogo from "../SiteLogo/SiteLogo";
 
 const Header = () => {
-	// const { user, logOut } = useContext(AuthContext);
+	const { user, logOut } = useContext(AuthContext);
 	const handleLogOut = () => {
 		logOut()
 			.then(() => {})
@@ -137,32 +137,65 @@ const Header = () => {
 							{navItems}
 						</ul>
 					</div>
-					<NavLink to={"/"}>
+					<Link to={"/"}>
 						<SiteLogo></SiteLogo>
-					</NavLink>
+					</Link>
 				</div>
 				<div className="navbar-center hidden lg:flex">
 					<ul className="menu menu-horizontal p-0">{navItems}</ul>
 				</div>
 				<div className="navbar-end">
-					<button className="">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="none"
-							viewBox="0 0 24 24"
-							className="stroke-secondary hover:stroke-accent"
-						>
-							<path
-								stroke=""
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35"
-							></path>
-						</svg>
-					</button>
+					{user?.email ? (
+						<div className="flex items-center">
+							<div className="dropdown dropdown-end">
+								<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+									<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-0">
+										<img
+											src={
+												user?.photoURL
+													? user?.photoURL
+													: "https://placeimg.com/80/80/people"
+											}
+										/>
+									</div>
+								</label>
+								<ul
+									tabIndex={0}
+									className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+								>
+									<li onClick={handleLogOut}>
+										<Link>Logout</Link>
+									</li>
+								</ul>
+							</div>
+						</div>
+					) : (
+						<div className="flex">
+							<div className="auth-area gap-4 flex">
+								<Link to={"/login"}>
+									<span className="btn btn-primary"> Login</span>{" "}
+								</Link>
+								<button className="">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										fill="none"
+										viewBox="0 0 24 24"
+										className="stroke-secondary hover:stroke-accent"
+									>
+										<path
+											stroke=""
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</header>

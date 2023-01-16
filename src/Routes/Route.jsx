@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import DashboardRoot from "../Layout/DashboardRoot";
 import Root from "../Layout/Root";
+import Banking from "../Pages/Banking/Banking";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import ErrorElement from "../Pages/ErrorElement/ErrorElement";
 import Home from "../Pages/Home/Home";
@@ -22,6 +23,18 @@ export const route = createBrowserRouter([
 			{
 				path: "/home",
 				element: <Home></Home>,
+			},
+			{
+				path: "/banking",
+				element: <Banking></Banking>,
+			},
+			{
+				path: "/insurance",
+				element: <Banking></Banking>,
+			},
+			{
+				path: "/travel",
+				element: <Banking></Banking>,
 			},
 			{
 				path: "/login",

@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../context/AuthProvider";
 
 const DashboardSidebar = () => {
+	const { user } = useContext(AuthContext);
 	return (
 		<>
 			<div className="h-full p-1 space-y-2 bg-white rounded-lg shadow-lg">
 				<div className="flex items-center space-x-4 bg-custom px-7 py-10">
-					<div className="avatar">
-						<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-0">
-							<img src="https://placeimg.com/192/192/people" />
+					{user?.email ? (
+						<div className="flex items-center">
+							<div className="avatar">
+								<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-0">
+									<img
+										src={
+											user?.photoURL
+												? user?.photoURL
+												: "https://placeimg.com/80/80/people"
+										}
+									/>
+								</div>
+							</div>
 						</div>
-					</div>
+					) : (
+						<div className="flex">
+							<div className="avatar">
+								<div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-0">
+									<img src="https://placeimg.com/192/192/people" />
+								</div>
+							</div>
+						</div>
+					)}
+
 					<div>
 						<h2 className="text-md font-semibold text-primary">
-							Martha Uilson
+							{user?.email ? user?.displayName : "Martha Uilson"}
 						</h2>
 						<span className="flex items-center space-x-1">
 							<a
@@ -21,7 +42,7 @@ const DashboardSidebar = () => {
 								href="#"
 								className="text-xs hover:underline dark:text-gray-400"
 							>
-								uilson@email.com
+								{user?.email ? user?.email : "uilson@email.com"}
 							</a>
 						</span>
 					</div>
