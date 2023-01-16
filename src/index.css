@@ -10,18 +10,18 @@ body {
 	overflow: hidden;
 }
 .home-hero-area {
-	background-image: url(./public/img/home/bg-area.png);
+	background-image: url(/img/home/bg-area.png);
 	background-repeat: no-repeat;
 	background-position: top right;
 }
 .icon-rail {
-	background-image: url(./public/img/bg/V7.png);
+	background-image: url(/img/bg/V7.png);
 	background-repeat: no-repeat;
 	background-position: 70%;
 	height: 300px;
 }
 .icon-orange {
-	background-image: url(../public/img/bg/group31.png);
+	background-image: url(./img/bg/group31.png);
 	background-repeat: no-repeat;
 	background-position: 8%;
 	height: 390px;
@@ -29,20 +29,20 @@ body {
 	width: 100%;
 }
 .icon-edge {
-	background-image: url(../public/img/bg/Ell.png);
+	background-image: url(/img/bg/Ell.png);
 	background-repeat: no-repeat;
 	height: 200px;
 	width: 200px;
 }
 .icon-green {
-	background-image: url(./public/img/bg/greencricle.png);
+	background-image: url(/img/bg/greencricle.png);
 	background-repeat: no-repeat;
 	background-position: 94%;
 	height: 60px;
 	overflow: hidden;
 }
 .icon-small-dot {
-	background-image: url(../public/img/bg/smallbg.png);
+	background-image: url(/img/bg/smallbg.png);
 	background-repeat: no-repeat;
 	background-position: 94%;
 	height: 20px;
@@ -50,20 +50,20 @@ body {
 	overflow: hidden;
 }
 .icon-group {
-	background-image: url(../public/img/bg/group32.png);
+	background-image: url(/img/bg/group32.png);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	background-position-y: bottom;
 	background-position-x: right;
 }
 .icon-travel-one {
-	background-image: url(../public/img/png/gtrip.png);
+	background-image: url(/img/png/gtrip.png);
 	background-repeat: no-repeat;
 	height: 400px;
 	width: 500px;
 }
 .icon-travel-two {
-	background-image: url(../public/img/png/topline.png);
+	background-image: url(/img/png/topline.png);
 	background-repeat: no-repeat;
 	width: 200px;
 	height: 95px;
@@ -74,7 +74,7 @@ body {
 	right: 0;
 }
 .icon-last {
-	background-image: url(../public/img/png/circlg.png);
+	background-image: url(/img/png/circlg.png);
 	background-repeat: no-repeat;
 	width: 300px;
 	height: 305px;
@@ -85,4 +85,63 @@ body {
 }
 .active svg path {
 	stroke: #ff8500;
+}
+.gray-nine {
+	stroke: #909090;
+}
+.bg-custom {
+	background-color: #f1fbf2;
+}
+.bg-ac-custom {
+	background-color: #fff4e7;
+}
+.dash-card-two {
+	background-color: #e9f1fb;
+}
+.dash-card-two-opa {
+	background-color: #f3f8ff;
+}
+.dash-card-two-text {
+	color: #6e7e98;
+}
+.dash-card-two-stroke {
+	stroke: #6e7e98;
+	fill: #6e7e98;
+}
+.dash-card-three {
+	background-color: #f5fbe9;
+}
+.dash-card-three-opa {
+	background-color: #f7fff3;
+}
+.dash-card-three-text {
+	color: #89927f;
+}
+.dash-card-three-stroke {
+	stroke: #89927f;
+	fill: #89927f;
+}
+.dash-card-one {
+	background-color: #fbe9ef;
+}
+.dash-card-one-opa {
+	background-color: #fff3f7;
+}
+.dash-card-one-text {
+	color: #986e6e;
+}
+.dash-card-one-stroke {
+	stroke: #986e6e;
+	fill: #986e6e;
+}
+.chart-ar {
+	width: 396px;
+}
+.chart-pilar {
+	width: 500px;
+}
+@media (min-width: 768px) {
+	.chart-ar {
+		width: 800px;
+	}
 }

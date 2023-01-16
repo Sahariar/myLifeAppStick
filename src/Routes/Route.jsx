@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
+import DashboardRoot from "../Layout/DashboardRoot";
 import Root from "../Layout/Root";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import ErrorElement from "../Pages/ErrorElement/ErrorElement";
@@ -30,9 +31,16 @@ export const route = createBrowserRouter([
 				path: "/register",
 				element: <Register />,
 			},
+		],
+	},
+	{
+		path: "/dashboard",
+		element: <DashboardRoot></DashboardRoot>,
+		errorElement: <ErrorElement />,
+		children: [
 			{
 				path: "/dashboard",
-				element: <Dashboard />,
+				element: <Dashboard></Dashboard>,
 			},
 		],
 	},

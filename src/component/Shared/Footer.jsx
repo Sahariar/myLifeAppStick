@@ -1,10 +1,10 @@
 import React from "react";
 import SiteLogo from "../SiteLogo/SiteLogo";
-import Gplay from "../../../public/img/png/gplay.jpg";
-import face from "../../../public/img/png/face.png";
-import insta from "../../../public/img/png/insta.png";
-import link from "../../../public/img/png/liken.png";
-import youtu from "../../../public/img/png/youtu.png";
+import Gplay from "/img/png/gplay.jpg";
+import face from "/img/png/face.png";
+import insta from "/img/png/insta.png";
+import link from "/img/png/liken.png";
+import youtu from "/img/png/youtu.png";
 
 const Footer = () => {
 	return (
@@ -20,7 +20,7 @@ const Footer = () => {
 				<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 					<div className="space-y-3 divide-y">
 						<h3 className="tracking-wide text-gray-400 ">Banking</h3>
-						<ul className="space-y-1 text-white">
+						<ul className="space-y-1 text-white py-4">
 							<li>
 								<a rel="noopener noreferrer" href="#">
 									Add new account
@@ -50,7 +50,7 @@ const Footer = () => {
 					</div>
 					<div className="space-y-3 divide-y">
 						<h3 className="tracking-wide text-gray-400">Insurance</h3>
-						<ul className="space-y-1 text-white">
+						<ul className="space-y-1 text-white py-4">
 							<li>
 								<a rel="noopener noreferrer" href="#">
 									Home insuraces
@@ -70,7 +70,7 @@ const Footer = () => {
 					</div>
 					<div className="space-y-3 divide-y">
 						<h3 className="tracking-wide text-gray-400">Traveling</h3>
-						<ul className="space-y-1 text-white">
+						<ul className="space-y-1 text-white py-4">
 							<li>
 								<a rel="noopener noreferrer" href="#">
 									Add new booking
@@ -90,7 +90,7 @@ const Footer = () => {
 					</div>
 					<div className="space-y-3 divide-y">
 						<h3 className="tracking-wide text-gray-400">More</h3>
-						<ul className="space-y-1 text-white">
+						<ul className="space-y-1 text-white py-4">
 							<li>
 								<a rel="noopener noreferrer" href="#">
 									About us

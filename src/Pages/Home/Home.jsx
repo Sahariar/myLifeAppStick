@@ -2,78 +2,78 @@ import React from "react";
 import HCard from "../../component/Home/HCard";
 import HTrip from "../../component/Home/HTrip";
 import SgoaldCard from "../../component/Home/SgoaldCard";
-import EfgLogo from "../../../public/img/brand/efg.svg";
-import Postfinance from "../../../public/img/brand/postfinance.svg";
-import Mirabad from "../../../public/img/brand/mirabad.svg";
-import UsbLogo from "../../../public/img/brand/usbLogo.svg";
-import PicetLogo from "../../../public/img/brand/Pictet_logo.svg";
+import EfgLogo from "/img/brand/efg.svg";
+import Postfinance from "/img/brand/postfinance.svg";
+import Mirabad from "/img/brand/mirabad.svg";
+import UsbLogo from "/img/brand/usbLogo.svg";
+import PicetLogo from "/img/brand/Pictet_logo.svg";
 const dataHeroCard = [
 	{
 		id: 1,
 		title: "BANKING",
-		img: "/public/img/card/bankingCard.svg",
+		img: "/img/card/bankingCard.svg",
 		bankData: [
 			{
 				id: 92,
 				info: "Add Account",
 				desc: "Your multiple bank account",
-				icon: "/public/img/png/credit-card.png",
+				icon: "/img/png/credit-card.png",
 			},
 			{
 				id: 42,
 				info: "Savings",
 				desc: "Explore saving plans",
-				icon: "/public/img/png/savings.png",
+				icon: "/img/png/savings.png",
 			},
 			{
 				id: 52,
 				info: "Add Cards",
 				desc: "Personalize your cards",
-				icon: "/public/img/png/credit-card (2).png",
+				icon: "/img/png/credit-card (2).png",
 			},
 		],
 	},
 	{
 		id: 2,
 		title: "Insurance",
-		img: "/public/img/card/InsuracnecCard.svg",
+		img: "/img/card/InsuracnecCard.svg",
 		bankData: [
 			{
 				id: 52,
 				info: "Home",
 				desc: "1 year - 25 years",
-				icon: "/public/img/png/house.png",
+				icon: "/img/png/house.png",
 			},
 			{
 				id: 32,
 				info: "Mobility",
 				desc: "3 months - 10 years",
-				icon: "/public/img/png/car.png",
+				icon: "/img/png/car.png",
 			},
 			{
 				id: 72,
 				info: "Traveling",
 				desc: "Day long - 6 months",
-				icon: "/public/img/png/plane.png",
+				icon: "/img/png/plane.png",
 			},
 		],
 	},
 	{
 		id: 3,
 		title: "Travel",
-		img: "/public/img/card/travel.svg",
+		img: "/img/card/travel.svg",
 		bankData: [
 			{
 				id: 22,
 				info: "New Booking",
 				desc: "Book a new schedule",
-				icon: "/public/img/png/booking.png",
+				icon: "/img/png/booking.png",
 			},
 			{
 				id: 62,
 				info: "Plan & Roots",
 				desc: "Explore all packages",
-				icon: "/public/img/png/plan.png",
+				icon: "/img/png/plan.png",
 			},
 		],
 	},
@@ -83,7 +83,7 @@ const dataSavingCard = [
 	{
 		id: 1,
 		title: "ubs",
-		img: "/public/img/bg/banklogo.png",
+		img: "/img/bg/banklogo.png",
 		iAmount: "50 - 250",
 		dPeriod: "1 - 10 years",
 		iRate: "3.5 - 10%",
@@ -91,7 +91,7 @@ const dataSavingCard = [
 	{
 		id: 2,
 		title: "pictet",
-		img: "/public/img/bg/logopictet.png",
+		img: "/img/bg/logopictet.png",
 		iAmount: "50 - 250",
 		dPeriod: "1 - 10 years",
 		iRate: "3.5 - 10%",
@@ -99,7 +99,7 @@ const dataSavingCard = [
 	{
 		id: 3,
 		title: "mirabud",
-		img: "/public/img/bg/logomirabud.png",
+		img: "/img/bg/logomirabud.png",
 		iAmount: "50 - 250",
 		dPeriod: "1 - 10 years",
 		iRate: "3.5 - 10%",
@@ -109,19 +109,19 @@ const dataTripCard = [
 	{
 		id: 1,
 		title: "Germany",
-		img: "/public/img/png/germany.jpg",
+		img: "/img/png/germany.jpg",
 		duration: "15 days",
 	},
 	{
 		id: 2,
 		title: "Norway",
-		img: "/public/img/png/norway.jpg",
+		img: "/img/png/norway.jpg",
 		duration: "1 months",
 	},
 	{
 		id: 3,
 		title: "United States Of America",
-		img: "/public/img/png/usa.jpg",
+		img: "/img/png/usa.jpg",
 		duration: "10 days",
 	},
 ];
