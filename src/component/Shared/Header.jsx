@@ -63,7 +63,10 @@ const Header = () => {
 				</NavLink>
 			</li>
 			<li className="text-secondary hover:text-accent  group">
-				<NavLink to={"/travel"} className="hover:bg-transparent font-medium">
+				<NavLink
+					to={"/travel"}
+					className="hover:bg-transparent font-medium active:text-accent"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"

@@ -79,3 +79,10 @@ body {
 	width: 300px;
 	height: 305px;
 }
+.active {
+	background-color: transparent;
+	color: #ff8500;
+}
+.active svg path {
+	stroke: #ff8500;
+}
